@@ -36,6 +36,9 @@
 .filter {
   padding: 5px;
 }
+.filter-btn{
+  margin:5px;
+}
 .shimmer-container {
   display: flex;
   flex-wrap: wrap;
@@ -45,4 +48,13 @@
   height: 400px;
   background-color: #f0f0f0;
   margin: 20px;
+}
+
+.login-btn {
+  margin: 0 10px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.search-box {
+  margin: 5px;
 }
