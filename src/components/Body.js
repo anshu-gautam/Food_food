@@ -1,4 +1,4 @@
-import ResturantCard from "./ResturantCard";
+import ResturantCard from "./RestaurantCard";
 import { useEffect, useState } from "react";
 import Shimmer from "./Shimmer";
 

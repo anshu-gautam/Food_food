@@ -1,6 +1,6 @@
 import { CDN_URL } from "../utils/constant";
 
-const ResturantCard = (props) => {
+const RestaurantCard = (props) => {
   const { resData } = props;
   const { cloudinaryImageId, name, cuisines, avgRating, costForTwo } =
     resData?.info;
@@ -16,4 +16,4 @@ const ResturantCard = (props) => {
     </div>
   );
 };
-export default ResturantCard;
+export default RestaurantCard;
