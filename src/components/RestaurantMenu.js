@@ -13,6 +13,7 @@ const RestaurantMenu = () => {
     try {
       const data = await fetch(MENU_API + resId);
       const resJson = await data.json();
+
       console.log(resJson);
 
       setResInfo(resJson.data);
@@ -27,6 +28,7 @@ const RestaurantMenu = () => {
 
   const { itemCards } =
     resInfo.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card;
+
   console.log(itemCards);
 
   return (
