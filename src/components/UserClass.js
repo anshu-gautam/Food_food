@@ -12,13 +12,18 @@ class USerClass extends React.Component {
     // console.log(this.props.name + "Child Constrctor");
   }
   async componentDidMount() {
-    const data = await fetch("https://api.github.com/users/anshu-gautam");
-    const jsonData = await data.json();
-    console.log(jsonData);
+    try {
+      const data = await fetch("https://api.github.com/users/anshu-gautam");
+      const jsonData = await data.json();
+      
+      console.log(jsonData);
 
-    this.setState({
-      userInfo: jsonData,
-    });
+      this.setState({
+        userInfo: jsonData,
+      });
+    } catch (error) {
+      console.error("An error occurred:", error);
+    }
 
     // console.log(this.props.name +"Child componentDidMount");
   }
