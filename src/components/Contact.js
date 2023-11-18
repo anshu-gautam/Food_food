@@ -5,13 +5,9 @@ import UserClass from "./UserClass";
 class Contact extends React.Component {
   constructor(props) {
     super(props);
-    // console.log("Parent Constructor");
   }
-  componentDidMount() {
-    // console.log("Parent componentDidMount");
-  }
+  componentDidMount() {}
   render() {
-    console.log("Parent Render");
     return (
       <div>
         <h1>Contact</h1>

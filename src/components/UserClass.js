@@ -9,14 +9,12 @@ class USerClass extends React.Component {
         avatar_url: " ",
       },
     };
-    // console.log(this.props.name + "Child Constrctor");
   }
   async componentDidMount() {
     try {
       const data = await fetch("https://api.github.com/users/anshu-gautam");
       const jsonData = await data.json();
       
-      console.log(jsonData);
 
       this.setState({
         userInfo: jsonData,
@@ -25,10 +23,8 @@ class USerClass extends React.Component {
       console.error("An error occurred:", error);
     }
 
-    // console.log(this.props.name +"Child componentDidMount");
   }
   render() {
-    // console.log(this.props.name +"Child Render");
 
     const { name, location, avatar_url } = this.state.userInfo;
     return (
