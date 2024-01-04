@@ -1,4 +1,4 @@
-const ArrowDownIcon = ({ className = " w-4 h-4" }) => {
+const ArrowDownIcon = ({ className = " w-6 h-6" }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -11,7 +11,7 @@ const ArrowDownIcon = ({ className = " w-4 h-4" }) => {
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
-        d="M19.5 13.5 12 21m0 0-7.5-7.5M12 21V3"
+        d="m19.5 8.25-7.5 7.5-7.5-7.5"
       />
     </svg>
   );
