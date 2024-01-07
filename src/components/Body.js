@@ -7,8 +7,9 @@ import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const [listOfResturants, setListOfResturants] = useState([]);
-  const [filteredResturant, setFilteredResturant] = useState("");
+  const [filteredResturant, setFilteredResturant] = useState([]);
   const [searchText, setSearchText] = useState("");
+  const { loggedInUser, setUserName } = useContext(UserContext);
 
   useEffect(() => {
     fetchData();
@@ -21,8 +22,9 @@ const Body = () => {
     const jsonData = await data.json();
 
     const resturantData =
-      jsonData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+      jsonData?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants;
+    console.log(resturantData);
 
     setListOfResturants(resturantData);
     setFilteredResturant(resturantData);
@@ -36,7 +38,6 @@ const Body = () => {
     return <Shimmer />;
   }
 
-   const { loggedInUser, setUserName } = useContext(UserContext);
   return (
     <div className="body">
       <div className="flex">
