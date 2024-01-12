@@ -33,10 +33,10 @@ const Header = () => {
             <Link to="/grocery">Grocery</Link>
           </li>
           <li className="px-4">
-            <Link to="/cart" className="flex">
-              <CartIcon />
-             ( {cartItems.length})
-            </Link>
+            <Link to="/cart">Cart - ({cartItems.length} items)</Link>
+            {/* <Link to="/cart" className="flex">
+              <CartIcon />({cartItems.length})
+            </Link> */}
           </li>
           <button
             className="login-btn"

@@ -22,7 +22,7 @@ const Body = () => {
     const jsonData = await data.json();
 
     const resturantData =
-      jsonData?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+      jsonData?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants;
     console.log(resturantData);
 

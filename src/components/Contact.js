@@ -1,30 +1,23 @@
-import React from "react";
-import User from "./User";
-import UserClass from "./UserClass";
-import UserContext from "../utils/UserContext";
-
-class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  componentDidMount() {}
-  render() {
-    return (
-      <div>
-        <h1>Contact</h1>
-        <h3>This is namaste react</h3>
-        <div>
-          <UserContext.Consumer>
-            {({ loggedInUser }) => (
-              <h1 className="font-bold">loggedInUser:{loggedInUser}</h1>
-            )}
-          </UserContext.Consumer>
-        </div>
-
-        <UserClass />
-      </div>
-    );
-  }
-}
-
+const Contact = () => {
+  return (
+    <div>
+      <h1 className="font-bold text-3xl p-4 m-4">Contact Us Page</h1>
+      <form>
+        <input
+          type="text"
+          className=" border border-black p-2 m-2"
+          placeholder="name"
+        />
+        <input
+          type="text"
+          className=" border border-black p-2 m-2"
+          placeholder="message"
+        />
+        <button className=" border border-black p-2 m-2 bg-gray-100 rounded-lg">
+          Submit
+        </button>
+      </form>
+    </div>
+  );
+};
 export default Contact;
