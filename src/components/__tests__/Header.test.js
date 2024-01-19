@@ -64,4 +64,3 @@ it("should render header with Login button", () => {
 
   expect(logoutButton).toBeInTheDocument();
 });
-

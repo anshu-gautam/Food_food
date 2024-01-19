@@ -5,7 +5,8 @@
   "scripts": {
     "start": "parcel index.html",
     "prod": " parcel build index.html",
-    "test": "jest"
+    "test": "jest",
+    "watch-test": "jest --watch"
   },
   "author": "Anshu Gautam",
   "license": "ISC",
