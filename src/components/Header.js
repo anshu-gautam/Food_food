@@ -1,9 +1,10 @@
 import { useContext, useState } from "react";
 import { LOGO_URL } from "../utils/constant";
+import logo from "../../public/Designers.png";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
-import CartIcon from "./Icons/CartIcon";
+
 import { useSelector } from "react-redux";
 
 const Header = () => {
@@ -15,7 +16,7 @@ const Header = () => {
   return (
     <div className="flex justify-between bg-green-100">
       <div className="flex items-center">
-        <img className="w-32" src={LOGO_URL} />
+        <img className="h-24" src={logo} />
       </div>
       <div className="nav-items">
         <ul className="flex p-4 m-4">
